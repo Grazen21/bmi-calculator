@@ -1,9 +1,7 @@
 let YourWeight=prompt("What is your weight(KG)?");
 let YourHeight=prompt("What is your height(Meters)?");
-let bmi= YourWeight/Math.pow(YourHeight, 2);
-
-
-
+let bmi= Math.round(YourWeight/Math.pow(YourHeight, 2)* 100) / 100;
+console.log(bmi);
 if(0 < bmi  && bmi <= 40) {
     if (bmi <= 18){
         console.log(`Your bmi is ${bmi}. You are underweight, please more!`)
